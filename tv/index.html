@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			body {
+				width: 375px;
+				height: 812px;
+				background-color: antiquewhite;
+			}
+
+			#btn_page2,
+			#btn_page1 {
+				width: 40%;
+				height: 20%;
+				font-size: 10vw;
+				cursor: pointer;
+				margin:auto;
+			}
+
+			#tv_screen {
+				background: #FAEBD7;
+				margin: auto;
+				width: 1000px;
+				height: 1700px;
+				background-image: url(backimage/0.jpg);
+				opacity: 0.5;
+			}
+		</style>
+
+	</head>
+	<body>
+		<div id="tv_screen">
+			<button type="button" id="btn_page1">page1</button>
+			<button type="button" id="btn_page2">page2</button>
+		</div>
+
+
+	</body>
+
+	<script type="text/javascript">
+		// location.href = "http://192.168.1.104/lovetv/love_home.php"
+		
+		var oPage1 = document.getElementById("btn_page1");
+		oPage1.onclick = function() {
+			location.href = "page1.php"
+		}
+
+		var oPage2 = document.getElementById("btn_page2");
+		oPage2.onclick = function() {
+			location.href = "page2.php"
+
+		}
+	// </script>
+</html>
